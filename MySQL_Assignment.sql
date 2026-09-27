@@ -596,8 +596,19 @@ CREATE TABLE Students (
     marks INT
 );
 
-USE MySQL_Assignment;
-
+INSERT INTO Students
+(student_id, student_name, department, marks)
+VALUES
+(1, 'Arun', 'CSE', 85),
+(2, 'Priya', 'ECE', 92),
+(3, 'Divya', 'IT', 78),
+(4, 'Karthik', 'CSE', 65),
+(5, 'Meena', 'ECE', 88),
+(6, 'Rahul', 'IT', 55),
+(7, 'Sneha', 'CSE', 95),
+(8, 'Bala', 'ECE', 72),
+(9, 'Keerthana', 'IT', 90),
+(10, 'Vijay', 'CSE', 40);
 
 SELECT department, AVG(marks) AS average_marks
 FROM Students
